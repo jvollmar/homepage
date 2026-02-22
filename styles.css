@@ -1,0 +1,89 @@
+/* Selects tags. */
+body{
+    background: #f6f7fb;
+    color: #222;
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* Selects classes. */
+.hero{
+    background: linear-gradient(135deg, #111827, #374151);
+    color: white;
+}
+
+/* Class selector */
+.footer{
+    background: #ffffff;
+    border-top: 1px solid #e5e7eb;
+}
+
+/* Selects ID's. */
+#quote{
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 0.5rem;
+}
+
+/* Selects descendants. */
+.card .card-title{
+    margin-bottom: 0.5rem;
+}
+
+/* Another class selector. */
+.video-wrap{
+    border-radius: 12px;
+    overflow: hidden;
+    border: 1px solid #e5e7eb;
+}
+
+/* Reusable utility class. */
+.gap>*{
+    margin-right: 0.5rem;
+}
+
+img{
+    max-height: 320px;
+    object-fit: cover;
+    width: 100%;
+}
+
+.dog-card-img{
+    height: 320px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.dog1-focus{
+    object-position: 50% 15%;
+}
+
+.dog2-focus{
+    object-position: 50% 50%;
+}
+
+.card{
+    border-radius: 14px;
+}
+
+.card-img-top{
+    border-top-left-radius: 14px;
+    border-top-right-radius: 14px;
+}
+
+.video-thumb{
+    position: relative;
+    cursor:pointer;
+    display:inline-block;
+}
+
+.play-button{
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    font-size:70px;
+    color:white;
+    background:rgba(0,0,0,0.6);
+    border-radius:50%;
+    padding:10px 25px;
+}

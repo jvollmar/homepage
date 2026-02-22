@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+        <link href="styles.css" rel="stylesheet">
+        <script defer src="script.js"></script>
+
+        <title>My Sieve Video</title>
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="index.html">My Homepage</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#nav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="nav">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active"><a class="nav-link" href="video.html">My Sieve Video</a></li>
+                    <li class="nav-item"><a class="nav-link" href="trivia.html">Math Trivia for Fun</a></li>
+                    <li class="nav-item"><a class="nav-link" href="geolocate.html">My Special Geolocator</a></li>
+                    <li class="nav-item"><a class="nav-link" href="dogs.html">My Two Favorite Kinds of Dogs</a></li>
+                </ul>
+            </div>
+        </nav>
+
+        <main class="container my-4">
+            <h1 id="testTitle" class="mb-3">My Sieve Video</h1>
+            <p class="text-muted">A short video of my introduction, with a bit extra.</p>
+            <div class="video-wrap text-center">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item"
+                        src="https://www.youtube-nocookie.com/embed/2GTUu8RDFX4?origin=https://www.youtube.com"
+                        allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+
+            <div class="alert alert-info mt-4" role="alert">
+                This video is embedded from Youtube.
+            </div>
+        </main>
+
+        <footer class="footer text-center py-3">
+            <span class="small">Back to <a href="index.html">Home</a></span>
+        </footer>
+    </body>
+</html>

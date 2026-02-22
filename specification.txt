@@ -1,0 +1,11 @@
+10+ HTML tags used (besides html/head/body/title):
+a, nav, button, main, header, sectno, div, h1, h2, p, ul, li, form, input, label, img, video, source, fotter, article, hr
+
+5+ CSS properties used:
+background, color, font-family, font-size, font-style, margin-top, border, border-radius, overflow
+
+Bootstrap use:
+Used Bootstrap for navbar, grid layout, buttons, cards, and alert comps used to make site nice-looking on mobile or laptop.
+
+JavaScript use:
+Used JavaScript for interactive features + surprise button, rotating quotes, a math trivia test, geolocator, and looking at dog images.

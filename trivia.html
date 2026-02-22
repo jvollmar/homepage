@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="styles.css" rel="stylesheet">
+        <title>Trivia!</title>
+        <script>
+            document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll(".section").forEach(function(section) {
+        const result = section.querySelector(".mcResult");
+        section.querySelectorAll(".correct").forEach(function(btn) {
+            btn.addEventListener("click", function() {
+                btn.style.backgroundColor = "#90EE90";
+                if (result) result.textContent = "Correct!";
+            });
+        });
+        section.querySelectorAll(".incorrect").forEach(function(btn) {
+            btn.addEventListener("click", function() {
+                btn.style.backgroundColor = "red";
+                if (result) result.textContent = "Incorrect";
+            });
+        });
+    });
+
+    const frInput = document.querySelector("#fr-answer");
+    const frButton = document.querySelector("#fr-check");
+    const frResult = document.querySelector("#fr-result");
+
+    frButton.addEventListener("click", function() {
+        const answer = frInput.value.trim().toLowerCase();
+        if (answer === "abu dhabi") {
+            frInput.style.backgroundColor = "#90EE90";
+            frResult.textContent = "Correct!";
+        } else {
+            frInput.style.backgroundColor = "red";
+            frResult.textContent = "Incorrect";
+        }
+    });
+});
+        </script>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Trivia!</h1>
+        </div>
+
+        <div class="container">
+            <div class="section">
+                <h2> Part 1: Mathematics History </h2>
+                <hr>
+                <h3>Which of these mathematicians invented the complex formula e<sup>ix</sup> = cos(x) + i(sin(x))?</h3>
+
+                <button class="incorrect">Neil Degrasse Tyson</button>
+                <button class="incorrect">Gottfried Wilhelm Liebniz</button>
+                <button class="incorrect">Srinivasa Ramanujan</button>
+                <button class="correct">Leonhard Euler</button>
+
+                <p class="mcResult"></p>
+            </div>
+
+        <div class="container">
+            <div class="section">
+                <h2> Part 2: Mathematical Identities </h2>
+                <hr>
+                <h3>Which of these identities is the definition of the Fibonacci sequence?</h3>
+
+                <button class="incorrect">a<sup>2</sup> + b<sup>2</sup> = c<sup>2</sup></button>
+                <button class="correct">F<sub>n</sub> + F<sub>n + 1</sub> = F<sub>n + 2</sub></button>
+                <button class="incorrect">a<sup>2</sup> * b<sup>2</sup> = (a * b)<sup>2</sup></sub></button>
+                <button class="incorrect">11(F<sub>n</sub>) + F<sub>n - 5</sub> = F<sub>n + 5</button>
+
+                <p class="mcResult"></p>
+            </div>
+
+        <div class="container">
+            <div class="section">
+                <h2> Part 3: Triple Test </h2>
+                <hr>
+                <h3>Which of these is a valid Pythagorean triple?</h3>
+
+                <button class="incorrect">4<sup>2</sup> + 6<sup>2</sup> = 10<sup>2</sup></button>
+                <button class="incorrect">13<sup>2</sup> + 93<sup>2</sup> = 138<sup>2</sup></button>
+                <button class="correct">36<sup>2</sup> + 77<sup>2</sup> = 85<sup>2</sup></button>
+                <button class="incorrect">14<sup>2</sup> + 48<sup>2</sup> = 51<sup>2</sup></button>
+
+                <p class="mcResult"></p>
+            </div>
+        </div>
+            <div class="section">
+                <h2>Quick Last Question: Capital</h2>
+                <hr>
+                <h3>What is the capital of the United Arab Emirates?</h3>
+
+                <input id="fr-answer" type="text">
+                <button id="fr-check">Check Answer For Capital Question</button>
+
+                <p id="fr-result"></p>
+            </div>
+        <p>
+
+        </p>
+        <footer class="footer text-center py-3">
+            <span class="small">Back to <a href="index.html">Home</a></span>
+        </footer>
+    </body>
+</html>
