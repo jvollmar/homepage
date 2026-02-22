@@ -32,9 +32,11 @@ document.addEventListener("DOMContentLoaded", ()=>{
         };
     }
 
-    $("#useMyLocation")?.onclick = () => navigator.geolocation.getCurrentPosition(p=>show(p.coords.latitude, p.coords.longitude, "You"));
+    const useMyLocation = $("#useMyLocation");
+    if (useMyLocation) useMyLocation.onclick = () => navigator.geolocation.getCurrentPosition(p=>show(p.coords.latitude, p.coords.longitude, "You"));
 
-    $("#copyBtn")?.onclick = () => navigator.clipboard.writeText($("#lat").textContent+", "+$("#lon").textContent);
+    const copyBtn = $("#copyBtn");
+    if (copyBtn) copyBtn.onclick = () => navigator.clipboard.writeText($("#lat").textContent+", "+$("#lon").textContent);
 
     const player=document.getElementById("player");
     if(player){
@@ -46,5 +48,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         allowfullscreen></iframe>`;
     }
 
-    document.getElementById("testTitle").textContent = "JavaScript is working!";
+    const testTitle = document.getElementById("testTitle");
+    if (testTitle) testTitle.textContent = "JavaScript is working!";
 });
