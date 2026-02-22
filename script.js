@@ -49,5 +49,5 @@ document.addEventListener("DOMContentLoaded", ()=>{
     }
 
     const testTitle = document.getElementById("testTitle");
-    if (testTitle) testTitle.textContent = "JavaScript is working!";
+    if (testTitle) testTitle.textContent = "My Harvard CS50 Final Project Video";
 });
