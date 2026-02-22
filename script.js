@@ -5,12 +5,8 @@ document.addEventListener("DOMContentLoaded", ()=>{
     const surpriseBtn = $("#surpriseBtn");
     if (surpriseBtn){
         surpriseBtn.onclick = () => {
-            $("#surpriseText").textContent = r([
-                "Prime numbers have only 2 divisors.",
-                "The Fibonacci sequence starts like this: 1,1,2,3,5,8...",
-                "Built with HTML/CSS/JavaScript.",
-                "Try My Special Geolocator!"
-            ]);
+            const pages = ["video.html", "geolocate.html", "trivia.html", "dogs.html"];
+            window.location.href = r(pages);
         };
     }
 
